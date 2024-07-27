@@ -520,8 +520,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3111518024704854580}
     - target: {fileID: 7567376977720703711, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
+      propertyPath: _rudderRotateSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567376977720703711, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
       propertyPath: _forwardSpeedPerGear
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7567376977720703711, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
       propertyPath: _reverseSpeedPerGear
