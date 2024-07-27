@@ -8,11 +8,13 @@ public class InputEventChannel:ScriptableObject
 
     public void OnThrottleInput(float throttle)
     {
+        Debug.Log("input throttle:"+ throttle);
         onThrottleInput?.Invoke(throttle);
     }
 
     public void OnRotateInput(float rotateInput)
     {
+        Debug.Log("input rotate:" + rotateInput);
         onRotateInput?.Invoke(rotateInput);
     }
 }
