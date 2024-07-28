@@ -97,137 +97,53 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: deveice_Cannons_small
+      name: deveice_Cannons_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 45
-        width: 27
-        height: 16
+        x: 3
+        y: 32
+        width: 16
+        height: 30
       alignment: 9
-      pivot: {x: 0.33333334, y: 0.5}
+      pivot: {x: 0.5, y: 0.26666668}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e52b1b549892de045ad3cba22035513a
-      internalID: -1705095956
+      spriteID: c931909aadb1aeb44aacc6af016c28f4
+      internalID: -585707966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: deveice_Cannons_Big
+      name: deveice_Cannons_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 44
-        width: 31
-        height: 18
+        x: 21
+        y: 39
+        width: 15
+        height: 23
       alignment: 9
-      pivot: {x: 0.2580645, y: 0.5}
+      pivot: {x: 0.5, y: 0.32608697}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 380131ca9dd39374f9a27675099a8e68
-      internalID: -940581579
+      spriteID: 970dc3ff9b75e5449a05cc7912a176d9
+      internalID: 1808717472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: deveice_DragonStriker
+      name: deveice_Cannons_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 27
-        width: 35
-        height: 17
-      alignment: 9
-      pivot: {x: 0.3, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4be4cf4361f818a48882b3d6d2ae0a16
-      internalID: -164303817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: deveice_Cannons_fishgig
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 28
-        width: 23
-        height: 15
-      alignment: 9
-      pivot: {x: 0.32608697, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4beb37b7f482f7b49acb272c5f282e59
-      internalID: 2143251579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: deveice_DragonStriker_Spear
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 17
-      alignment: 9
-      pivot: {x: 0.8125, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb4d0f4d2d388d64488362b916bb40e4
-      internalID: -377914104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: deveice_Cannon_SmallProjectile
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 20
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37529bf23ad64e54da55de678d880251
-      internalID: -938516371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: deveice_Cannons_BigProjectile
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 20
+        x: 37
+        y: 53
         width: 7
         height: 7
       alignment: 0
@@ -237,29 +153,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e80150b45b602944b8f221bf5bb1b08e
-      internalID: 1084915465
+      spriteID: dd664a877f678a74ca80d9afc5d501f1
+      internalID: 811110606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: deveice_fishgig_spearProjectile
+      name: deveice_Cannons_3
       rect:
         serializedVersion: 2
-        x: 12
-        y: 18
-        width: 25
-        height: 9
+        x: 47
+        y: 0
+        width: 17
+        height: 63
       alignment: 9
-      pivot: {x: 0.7168, y: 0.5}
+      pivot: {x: 0.5, y: 0.77682537}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c343622dbd3ce3a418dfb2f3f982271e
-      internalID: -1814997891
+      spriteID: 4b704e43e2c86db45a9332f9054cb970
+      internalID: -342959061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deveice_Cannons_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 43
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af4d955851c7c44f85dcea226edd3d5
+      internalID: -1524187634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deveice_Cannons_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ab3afc5b9ffe14f809f6274ec86b44
+      internalID: 780898004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deveice_Cannons_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 17
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.30882353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b0da1a8fb9ba9448a3913af1ab2cde
+      internalID: 1950049529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deveice_Cannons_7
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 12
+        width: 9
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.76}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abeeb85ee23b07a4591ce83c27dc8d0e
+      internalID: -1248869609
       vertices: []
       indices: 
       edges: []
@@ -275,14 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      deveice_Cannon_SmallProjectile: -938516371
-      deveice_Cannons_Big: -940581579
-      deveice_Cannons_BigProjectile: 1084915465
-      deveice_Cannons_fishgig: 2143251579
-      deveice_Cannons_small: -1705095956
-      deveice_DragonStriker: -164303817
-      deveice_DragonStriker_Spear: -377914104
-      deveice_fishgig_spearProjectile: -1814997891
+      deveice_Cannons_0: -585707966
+      deveice_Cannons_1: 1808717472
+      deveice_Cannons_2: 811110606
+      deveice_Cannons_3: -342959061
+      deveice_Cannons_4: -1524187634
+      deveice_Cannons_5: 780898004
+      deveice_Cannons_6: 1950049529
+      deveice_Cannons_7: -1248869609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
