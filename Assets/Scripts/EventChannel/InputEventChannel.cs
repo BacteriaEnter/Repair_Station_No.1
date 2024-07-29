@@ -5,16 +5,27 @@ public class InputEventChannel:ScriptableObject
 {
     public event Action<float> onThrottleInput;
     public event Action<float> onRotateInput;
+    public event Action<int> onModularInput;
+    public event Action<bool> onConfirmInput; 
 
     public void OnThrottleInput(float throttle)
     {
-        Debug.Log("input throttle:"+ throttle);
         onThrottleInput?.Invoke(throttle);
     }
 
     public void OnRotateInput(float rotateInput)
     {
-        Debug.Log("input rotate:" + rotateInput);
         onRotateInput?.Invoke(rotateInput);
     }
+
+    public void OnModularInput(int obj)
+    {
+        onModularInput?.Invoke(obj);
+    }
+
+    public void OnConfirmInput(bool confirm)
+    {
+        onConfirmInput?.Invoke(confirm);
+    }
+    
 }

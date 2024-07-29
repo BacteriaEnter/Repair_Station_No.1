@@ -44,6 +44,60 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Modular1"",
+                    ""type"": ""Button"",
+                    ""id"": ""85de714d-3a54-4c00-b182-1b86c825b617"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Modular2"",
+                    ""type"": ""Button"",
+                    ""id"": ""ec75908b-c48a-4b03-892f-bcd36693192a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Modular3"",
+                    ""type"": ""Button"",
+                    ""id"": ""5fd1383d-0ad2-45b0-9faa-1baf52142a19"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Modular4"",
+                    ""type"": ""Button"",
+                    ""id"": ""36bc1a57-1db9-41e4-812d-bb2a48cbcd87"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Modular5"",
+                    ""type"": ""Button"",
+                    ""id"": ""c8593ce6-4318-4504-abc2-48188ecc6813"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Modular6"",
+                    ""type"": ""Button"",
+                    ""id"": ""c4e2ea3a-2030-4eec-a510-5130efc4604b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -112,6 +166,120 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
                     ""action"": ""Rudder"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bcfb0217-f629-4179-b246-fef81545af7c"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Modular1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""412086ec-60a0-4d15-94e3-2fd6a6f99130"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Modular2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""534476d1-3f27-4450-9d92-2d58a845c518"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Modular3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bccbc711-8cf7-4343-9ffc-d6b82f610313"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Modular4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2eea6dcc-493c-48a5-b7a3-bfcefe379e33"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Modular5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c5c1be2c-86d1-4e38-b1db-6a3f631d68ca"",
+                    ""path"": ""<Keyboard>/6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Modular6"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""ActionInput"",
+            ""id"": ""b7ed1244-54c4-4024-ad19-a32812436783"",
+            ""actions"": [
+                {
+                    ""name"": ""Confirm"",
+                    ""type"": ""Button"",
+                    ""id"": ""0bfe55ca-e548-4e66-ad16-7dd3ef2e8ba4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Cancel"",
+                    ""type"": ""Button"",
+                    ""id"": ""61a5ec5e-c496-431d-b683-035c76722737"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""eead08e5-5bdc-409b-9f99-867883c8b306"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Confirm"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f7d95f17-3e47-4f73-8afd-751f6ab96b31"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -122,6 +290,16 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         m_MovementInput = asset.FindActionMap("MovementInput", throwIfNotFound: true);
         m_MovementInput_Throttle = m_MovementInput.FindAction("Throttle", throwIfNotFound: true);
         m_MovementInput_Rudder = m_MovementInput.FindAction("Rudder", throwIfNotFound: true);
+        m_MovementInput_Modular1 = m_MovementInput.FindAction("Modular1", throwIfNotFound: true);
+        m_MovementInput_Modular2 = m_MovementInput.FindAction("Modular2", throwIfNotFound: true);
+        m_MovementInput_Modular3 = m_MovementInput.FindAction("Modular3", throwIfNotFound: true);
+        m_MovementInput_Modular4 = m_MovementInput.FindAction("Modular4", throwIfNotFound: true);
+        m_MovementInput_Modular5 = m_MovementInput.FindAction("Modular5", throwIfNotFound: true);
+        m_MovementInput_Modular6 = m_MovementInput.FindAction("Modular6", throwIfNotFound: true);
+        // ActionInput
+        m_ActionInput = asset.FindActionMap("ActionInput", throwIfNotFound: true);
+        m_ActionInput_Confirm = m_ActionInput.FindAction("Confirm", throwIfNotFound: true);
+        m_ActionInput_Cancel = m_ActionInput.FindAction("Cancel", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -185,12 +363,24 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
     private List<IMovementInputActions> m_MovementInputActionsCallbackInterfaces = new List<IMovementInputActions>();
     private readonly InputAction m_MovementInput_Throttle;
     private readonly InputAction m_MovementInput_Rudder;
+    private readonly InputAction m_MovementInput_Modular1;
+    private readonly InputAction m_MovementInput_Modular2;
+    private readonly InputAction m_MovementInput_Modular3;
+    private readonly InputAction m_MovementInput_Modular4;
+    private readonly InputAction m_MovementInput_Modular5;
+    private readonly InputAction m_MovementInput_Modular6;
     public struct MovementInputActions
     {
         private @PlayerAction m_Wrapper;
         public MovementInputActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @Throttle => m_Wrapper.m_MovementInput_Throttle;
         public InputAction @Rudder => m_Wrapper.m_MovementInput_Rudder;
+        public InputAction @Modular1 => m_Wrapper.m_MovementInput_Modular1;
+        public InputAction @Modular2 => m_Wrapper.m_MovementInput_Modular2;
+        public InputAction @Modular3 => m_Wrapper.m_MovementInput_Modular3;
+        public InputAction @Modular4 => m_Wrapper.m_MovementInput_Modular4;
+        public InputAction @Modular5 => m_Wrapper.m_MovementInput_Modular5;
+        public InputAction @Modular6 => m_Wrapper.m_MovementInput_Modular6;
         public InputActionMap Get() { return m_Wrapper.m_MovementInput; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -206,6 +396,24 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
             @Rudder.started += instance.OnRudder;
             @Rudder.performed += instance.OnRudder;
             @Rudder.canceled += instance.OnRudder;
+            @Modular1.started += instance.OnModular1;
+            @Modular1.performed += instance.OnModular1;
+            @Modular1.canceled += instance.OnModular1;
+            @Modular2.started += instance.OnModular2;
+            @Modular2.performed += instance.OnModular2;
+            @Modular2.canceled += instance.OnModular2;
+            @Modular3.started += instance.OnModular3;
+            @Modular3.performed += instance.OnModular3;
+            @Modular3.canceled += instance.OnModular3;
+            @Modular4.started += instance.OnModular4;
+            @Modular4.performed += instance.OnModular4;
+            @Modular4.canceled += instance.OnModular4;
+            @Modular5.started += instance.OnModular5;
+            @Modular5.performed += instance.OnModular5;
+            @Modular5.canceled += instance.OnModular5;
+            @Modular6.started += instance.OnModular6;
+            @Modular6.performed += instance.OnModular6;
+            @Modular6.canceled += instance.OnModular6;
         }
 
         private void UnregisterCallbacks(IMovementInputActions instance)
@@ -216,6 +424,24 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
             @Rudder.started -= instance.OnRudder;
             @Rudder.performed -= instance.OnRudder;
             @Rudder.canceled -= instance.OnRudder;
+            @Modular1.started -= instance.OnModular1;
+            @Modular1.performed -= instance.OnModular1;
+            @Modular1.canceled -= instance.OnModular1;
+            @Modular2.started -= instance.OnModular2;
+            @Modular2.performed -= instance.OnModular2;
+            @Modular2.canceled -= instance.OnModular2;
+            @Modular3.started -= instance.OnModular3;
+            @Modular3.performed -= instance.OnModular3;
+            @Modular3.canceled -= instance.OnModular3;
+            @Modular4.started -= instance.OnModular4;
+            @Modular4.performed -= instance.OnModular4;
+            @Modular4.canceled -= instance.OnModular4;
+            @Modular5.started -= instance.OnModular5;
+            @Modular5.performed -= instance.OnModular5;
+            @Modular5.canceled -= instance.OnModular5;
+            @Modular6.started -= instance.OnModular6;
+            @Modular6.performed -= instance.OnModular6;
+            @Modular6.canceled -= instance.OnModular6;
         }
 
         public void RemoveCallbacks(IMovementInputActions instance)
@@ -233,9 +459,74 @@ public partial class @PlayerAction: IInputActionCollection2, IDisposable
         }
     }
     public MovementInputActions @MovementInput => new MovementInputActions(this);
+
+    // ActionInput
+    private readonly InputActionMap m_ActionInput;
+    private List<IActionInputActions> m_ActionInputActionsCallbackInterfaces = new List<IActionInputActions>();
+    private readonly InputAction m_ActionInput_Confirm;
+    private readonly InputAction m_ActionInput_Cancel;
+    public struct ActionInputActions
+    {
+        private @PlayerAction m_Wrapper;
+        public ActionInputActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Confirm => m_Wrapper.m_ActionInput_Confirm;
+        public InputAction @Cancel => m_Wrapper.m_ActionInput_Cancel;
+        public InputActionMap Get() { return m_Wrapper.m_ActionInput; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ActionInputActions set) { return set.Get(); }
+        public void AddCallbacks(IActionInputActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ActionInputActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ActionInputActionsCallbackInterfaces.Add(instance);
+            @Confirm.started += instance.OnConfirm;
+            @Confirm.performed += instance.OnConfirm;
+            @Confirm.canceled += instance.OnConfirm;
+            @Cancel.started += instance.OnCancel;
+            @Cancel.performed += instance.OnCancel;
+            @Cancel.canceled += instance.OnCancel;
+        }
+
+        private void UnregisterCallbacks(IActionInputActions instance)
+        {
+            @Confirm.started -= instance.OnConfirm;
+            @Confirm.performed -= instance.OnConfirm;
+            @Confirm.canceled -= instance.OnConfirm;
+            @Cancel.started -= instance.OnCancel;
+            @Cancel.performed -= instance.OnCancel;
+            @Cancel.canceled -= instance.OnCancel;
+        }
+
+        public void RemoveCallbacks(IActionInputActions instance)
+        {
+            if (m_Wrapper.m_ActionInputActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IActionInputActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ActionInputActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ActionInputActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public ActionInputActions @ActionInput => new ActionInputActions(this);
     public interface IMovementInputActions
     {
         void OnThrottle(InputAction.CallbackContext context);
         void OnRudder(InputAction.CallbackContext context);
+        void OnModular1(InputAction.CallbackContext context);
+        void OnModular2(InputAction.CallbackContext context);
+        void OnModular3(InputAction.CallbackContext context);
+        void OnModular4(InputAction.CallbackContext context);
+        void OnModular5(InputAction.CallbackContext context);
+        void OnModular6(InputAction.CallbackContext context);
+    }
+    public interface IActionInputActions
+    {
+        void OnConfirm(InputAction.CallbackContext context);
+        void OnCancel(InputAction.CallbackContext context);
     }
 }
