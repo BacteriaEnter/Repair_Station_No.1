@@ -121,7 +121,7 @@ TextureImporter:
       name: UI_direction_2
       rect:
         serializedVersion: 2
-        x: 26
+        x: 19
         y: 0
         width: 17
         height: 16
@@ -134,6 +134,48 @@ TextureImporter:
       bones: []
       spriteID: 867eceee2c220ee498c8f35ee7a12efd
       internalID: -1027056143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_direction_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd882783f6eede9419fce1d4f191b75b
+      internalID: 844357131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_direction_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 2
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738552eb3c73ed44e8dc98a6eb0fd9c8
+      internalID: 343881392
       vertices: []
       indices: 
       edges: []
