@@ -41,6 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: DeckMiddle
+    uniqueID: 3069188271
+    locked: 0
+  - name: DeckTop
+    uniqueID: 615143733
+    locked: 0
   - name: under sea
     uniqueID: 1052284267
     locked: 0
