@@ -7,16 +7,21 @@ public class Projectile:MonoBehaviour
     private float _damage;
     [SerializeField] private LifeTimer _lifeTimer;
     [SerializeField] private Rigidbody2D _rb;
+    [SerializeField] protected ProjectileMoveState _moveState;
     
-    public void Init(Vector3 dir,float damage)
+    public virtual void Init(Vector3 dir,float damage)
     {
         transform.up = dir;
         _lifeTimer.Timer();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
-        Move();
+        if (_moveState==ProjectileMoveState.Move)
+        {
+            Move();
+        }
+
     }
 
     private void Move()
@@ -28,4 +33,10 @@ public class Projectile:MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+}
+
+public enum ProjectileMoveState
+{
+    Move,
+    Freeze
 }
