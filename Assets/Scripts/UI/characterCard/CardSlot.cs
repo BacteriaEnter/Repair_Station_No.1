@@ -7,6 +7,7 @@ public class CardSlot : MonoBehaviour
 {
     [field: SerializeField] public RectTransform RectTransform { get; private set; }
     [field: SerializeField] public List<Card> Cards { get; private set; }
+    [SerializeField] float cardWidth = 150;
 
     [Button]
     private void Reset()
@@ -23,11 +24,13 @@ public class CardSlot : MonoBehaviour
         card.RectTransform.SetAsFirstSibling();
 
         //todo 需要手写一个排列，不用自带的垂直布局组件
-        var height = 1f / Cards.Count * 100 + (Cards.Count - 1) * 5;
-        
+
+        //调整高度
+        var height = cardWidth * (2f - Mathf.Pow(0.5f, Cards.Count - 1) )/ Cards.Count;
+        Debug.Log(Cards.Count + "->" + height);
         foreach (var c in Cards)
         {
-            c.RectTransform.sizeDelta = new Vector2(100, height);
+            c.RectTransform.sizeDelta = new Vector2(cardWidth, height);
         }
     }
 
@@ -42,13 +45,13 @@ public class CardSlot : MonoBehaviour
         card = Cards[^1];
         Cards.RemoveAt(Cards.Count - 1);
         
-        card.RectTransform.sizeDelta = new Vector2(100, 100);
+        card.RectTransform.sizeDelta = new Vector2(cardWidth, cardWidth);
         card.RectTransform.SetParent(RectTransform.parent);
         card.RectTransform.SetAsLastSibling();
         
         foreach (var card1 in Cards)
         {
-            card1.RectTransform.sizeDelta = new Vector2(100, 1f / Cards.Count * 100 + (Cards.Count - 1) * 5);
+            card1.RectTransform.sizeDelta = new Vector2(cardWidth, cardWidth * (2f - Mathf.Pow(0.5f, Cards.Count - 1)) / Cards.Count);
         }
         return true;
     }
