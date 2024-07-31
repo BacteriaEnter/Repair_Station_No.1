@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefab/Efx/attack & cast.meta
 guid: af7e7984c5d76ea42993cfd3c4ca0930
+========
+guid: cc32602ccf15134458a561441d17dd1d
+>>>>>>>> parent of a85abc0 (模块系统):Assets/Prefab/Efx/engine.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
