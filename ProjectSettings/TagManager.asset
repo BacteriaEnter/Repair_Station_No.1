@@ -44,6 +44,9 @@ TagManager:
   - name: DeckMiddle
     uniqueID: 3069188271
     locked: 0
+  - name: Weapon
+    uniqueID: 3863242847
+    locked: 0
   - name: DeckTop
     uniqueID: 615143733
     locked: 0
