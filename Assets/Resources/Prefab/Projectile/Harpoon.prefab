@@ -53,7 +53,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 68eca241bde3c8148a7271acb92b55d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,7 +79,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -128,8 +128,8 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
-    textureScale: {x: 1, y: 1}
+    textureMode: 4
+    textureScale: {x: 4, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0
@@ -232,7 +232,8 @@ GameObject:
   - component: {fileID: 7130041792991975726}
   - component: {fileID: 3702356276274980013}
   - component: {fileID: 2499729069071814537}
-  m_Layer: 0
+  - component: {fileID: 7972430081221745884}
+  m_Layer: 6
   m_Name: Harpoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,8 +301,10 @@ MonoBehaviour:
   _speed: 5
   _lifeTimer: {fileID: 7130041792991975726}
   _rb: {fileID: 2499729069071814537}
+  _moveState: 0
   _line: {fileID: 1704722958991116432}
   _lineConnectPoint: {fileID: 1676109248576171211}
+  maxLength: 6
 --- !u!50 &2499729069071814537
 Rigidbody2D:
   serializedVersion: 4
@@ -329,6 +332,41 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &7972430081221745884
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5134173457021826040}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 0.62}
+  m_Direction: 0
 --- !u!1 &8604118003214038011
 GameObject:
   m_ObjectHideFlags: 0

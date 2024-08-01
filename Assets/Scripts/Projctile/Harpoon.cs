@@ -5,10 +5,11 @@ public class Harpoon:Projectile
 {
     private HarpoonLauncher _harpoonLauncher;
     private bool _isCatched;
-    private Transform target;
+    private Enemy target;
     private Vector3 _offset;
     [SerializeField] private LineRenderer _line;
     [SerializeField] private Transform _lineConnectPoint;
+    [SerializeField] private float maxLength;
     private void OnTriggerEnter(Collider other)
     {
         if (_isCatched)
@@ -20,6 +21,8 @@ public class Harpoon:Projectile
         _isCatched = true;
         _moveState = ProjectileMoveState.Freeze;
     }
+    
+    
 
     public void HitCheck()
     {
@@ -38,8 +41,17 @@ public class Harpoon:Projectile
 
     private void HandleWire()
     {
+        if (target!=null)
+        {
+            var dir=target.transform.position - _harpoonLauncher.muzzle.position;
+            dir.Normalize();
+            var dest=dir * maxLength + _harpoonLauncher.muzzle.position;
+            transform.position = dest;
+            target.Pull(dest);
+        }
         _line.SetPosition(0,_harpoonLauncher.muzzle.position);
         _line.SetPosition(1,_lineConnectPoint.position);
+        
     }
 
     public void ReadyHarpoon(HarpoonLauncher hl)
@@ -47,4 +59,11 @@ public class Harpoon:Projectile
         _harpoonLauncher = hl;
         _isCatched = false;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        other.TryGetComponent(out target);
+    }
+    
+    
 }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class FishingNet:Weapon
+public class FishingNetLauncher:Weapon
 {
     [SerializeField] private string _projectileID;
     [SerializeField] private Transform _muzzle;

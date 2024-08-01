@@ -9,8 +9,5 @@ public class Mine:Projectile
       _moveState = ProjectileMoveState.Freeze;
    }
 
-   public void Delay()
-   {
-      _moveState = ProjectileMoveState.Move;
-   }
+
 }

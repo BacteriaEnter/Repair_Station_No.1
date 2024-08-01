@@ -1,9 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class BoatController : MonoBehaviour
 {
@@ -85,6 +81,11 @@ public class BoatController : MonoBehaviour
             {
                 _currentRudder = 0;
             }
+        }
+        else if (Mathf.Abs(_currentSpeed)==0)
+        {
+            _currentRudder = 0;
+            _isTurning = false;
         }
     }
 
