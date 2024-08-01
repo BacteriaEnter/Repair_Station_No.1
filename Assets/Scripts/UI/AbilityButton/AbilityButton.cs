@@ -38,15 +38,11 @@ public class AbilityButton : MonoBehaviour
         // todo 之后加个模块变化事件，该UI监听事件；或者在AbilityButtonManager中监听事件
         // _abilityButtonManager.GearManager.OnGearChange += i => { };
         CurrentGear = _abilityButtonManager.GearManager.GearSlots[index].CurrentGear;
-    }
 
-    private void OnEnable()
-    {
-        button.onClick.AddListener(() => _abilityButtonManager.GearManager.EnableModularByInputID(index));
-    }
-
-    private void OnDisable()
-    {
-        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(() =>
+        {
+            Debug.Log(index);
+            _abilityButtonManager.GearManager.EnableModularByInputID(index);
+        });
     }
 }
