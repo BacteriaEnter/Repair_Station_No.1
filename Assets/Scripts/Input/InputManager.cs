@@ -9,6 +9,13 @@ public class InputManager:MonoBehaviour
     private float _rotateInput;
     public Vector2 mousePosWorld { get; set; }
 
+    private Camera _mainCamera;
+
+    private void Awake()
+    {
+        _mainCamera = Camera.main;
+    }
+
     private void OnEnable()
     {
         if (_playerAction == null)
@@ -32,7 +39,7 @@ public class InputManager:MonoBehaviour
 
     private void Update()
     {
-        mousePosWorld=Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        mousePosWorld=_mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         HandleRotateInput();
     }
 

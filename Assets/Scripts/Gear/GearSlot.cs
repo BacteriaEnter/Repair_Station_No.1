@@ -3,14 +3,15 @@
 public class GearSlot : MonoBehaviour
 {
     [SerializeField] private GearManager _gearManager;
-    public Gear currentGear;
+    [field: SerializeField] public Gear CurrentGear { get; private set; }
+    
     public void SetGear(Gear gear)
     {
-        currentGear = gear;
+        CurrentGear = gear;
     }
 
     public void RemoveGear()
     {
-        currentGear = null;
+        CurrentGear = null;
     }
 }

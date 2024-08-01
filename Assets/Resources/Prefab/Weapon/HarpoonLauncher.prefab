@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10955a6064c545ce8c595cead33627f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 9800484221f58494ea4f53b5edacd9dd, type: 3}
   _gear: {fileID: 606950110999503797}
   _projectileID: Harpoon
   muzzle: {fileID: 5216428653945865377}

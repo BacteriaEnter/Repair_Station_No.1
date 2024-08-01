@@ -9,6 +9,8 @@ public class WeaponGear:Gear
         
     }
 
+    public override Sprite Sprite => _weapon.Sprite;
+
     public override void Engage(Vector2 worldPosition)
     {
         _weapon.Engage(worldPosition);

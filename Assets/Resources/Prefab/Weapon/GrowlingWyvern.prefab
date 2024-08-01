@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36caa0d7c394e16818180a3b2086db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 9800484221f58494ea4f53b5edacd9dd, type: 3}
   _gear: {fileID: 4685968945703526918}
   _spear: {fileID: 849647414252330578}
 --- !u!114 &4685968945703526918
