@@ -48,10 +48,12 @@ public class Harpoon:Projectile
             var dest=dir * maxLength + _harpoonLauncher.muzzle.position;
             transform.position = dest;
             target.Pull(dest);
+            
+            var v3 = _lineConnectPoint.position - _harpoonLauncher.muzzle.position;
+            transform.up = v3;
         }
         _line.SetPosition(0,_harpoonLauncher.muzzle.position);
         _line.SetPosition(1,_lineConnectPoint.position);
-        
     }
 
     public void ReadyHarpoon(HarpoonLauncher hl)
