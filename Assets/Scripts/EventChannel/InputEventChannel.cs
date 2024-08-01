@@ -6,7 +6,7 @@ public class InputEventChannel:ScriptableObject
     public event Action<float> onThrottleInput;
     public event Action<float> onRotateInput;
     public event Action<int> onModularInput;
-    public event Action<bool> onConfirmInput; 
+    public event Action<bool> onConfirmInput;
 
     public void OnThrottleInput(float throttle)
     {

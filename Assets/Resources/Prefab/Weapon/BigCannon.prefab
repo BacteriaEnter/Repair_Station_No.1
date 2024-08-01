@@ -61,6 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0007b6f8f50344fbb8f753318194c76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 9800484221f58494ea4f53b5edacd9dd, type: 3}
   _gear: {fileID: 5779689871024212185}
   _projectileID: CannonBall
   _muzzle: {fileID: 0}

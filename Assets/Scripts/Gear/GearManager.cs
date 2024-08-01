@@ -5,7 +5,7 @@ public class GearManager:MonoBehaviour
 {
     public InputManager _inputManager;
     [SerializeField] private InputEventChannel _inputEventChannel;
-    [SerializeField] private List<GearSlot> _gearSlots = new List<GearSlot>();
+    [field: SerializeField] public List<GearSlot> GearSlots { get; private set; }
     [SerializeField] private Gear _currentSelectedGear;
     
     
@@ -21,11 +21,11 @@ public class GearManager:MonoBehaviour
         _inputEventChannel.onConfirmInput -= HandleSelectedGear;
     }
     
-    private void EnableModularByInputID(int i)
+    public void EnableModularByInputID(int i)
     {
-        if (_gearSlots[i].currentGear!=null)
+        if (GearSlots[i].CurrentGear!=null)
         {
-            _currentSelectedGear = _gearSlots[i].currentGear;
+            _currentSelectedGear = GearSlots[i].CurrentGear;
             //Change cursor
         }
     }
