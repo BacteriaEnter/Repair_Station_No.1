@@ -2665,6 +2665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: armor point (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5537322824270524309, guid: 0394b6f6854f08c49bb46cd6cebbf20d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 13dfbc5bcc53734479975f18f17261c7, type: 3}
     - target: {fileID: 6142481484654996201, guid: 0394b6f6854f08c49bb46cd6cebbf20d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3994,6 +3998,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hit point icon (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5537322824270524309, guid: 445ee3e9e255ca148b984143f67aab9e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f2f69aeca9eb9a44ba5a16d6fa8ed1c3, type: 3}
     - target: {fileID: 6142481484654996201, guid: 445ee3e9e255ca148b984143f67aab9e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9115,6 +9123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hit point icon (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5537322824270524309, guid: 445ee3e9e255ca148b984143f67aab9e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f2f69aeca9eb9a44ba5a16d6fa8ed1c3, type: 3}
     - target: {fileID: 6142481484654996201, guid: 445ee3e9e255ca148b984143f67aab9e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -17448,6 +17460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: armor point (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5537322824270524309, guid: 0394b6f6854f08c49bb46cd6cebbf20d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 13dfbc5bcc53734479975f18f17261c7, type: 3}
     - target: {fileID: 6142481484654996201, guid: 0394b6f6854f08c49bb46cd6cebbf20d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
