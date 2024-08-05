@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Enemy:MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D _rb;
 
@@ -8,4 +8,10 @@ public class Enemy:MonoBehaviour
     {
         transform.position = position;
     }
+
+    public void TakeDamage(int damage)
+    {
+        
+    }
+
 }

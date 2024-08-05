@@ -8,7 +8,7 @@ public class Projectile:MonoBehaviour
     [SerializeField] private LifeTimer _lifeTimer;
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] protected ProjectileMoveState _moveState;
-    
+    [SerializeField] protected string _fxID;
     public virtual void Init(Vector3 dir,float damage)
     {
         transform.up = dir;

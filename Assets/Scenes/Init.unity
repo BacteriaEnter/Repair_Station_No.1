@@ -1157,6 +1157,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4624742920506284046, guid: 8ef506594bbf0544c9fba75fdf0c22ef, type: 3}
   m_PrefabInstance: {fileID: 1189696290}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1511333821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1511333823}
+  - component: {fileID: 1511333822}
+  m_Layer: 7
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1511333822
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511333821}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.8691134}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 20.995167}
+  m_EdgeRadius: 0
+--- !u!4 &1511333823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511333821}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.82, y: 0.47, z: -0.042207304}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1597557831 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4685968945703526918, guid: 01fa2afc0e95b6d468b54f4d24a99e57, type: 3}
@@ -1270,12 +1347,24 @@ PrefabInstance:
       propertyPath: currentGear
       value: 
       objectReference: {fileID: 1414205469}
+    - target: {fileID: 1297060534516011525, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
+      propertyPath: <CurrentGear>k__BackingField
+      value: 
+      objectReference: {fileID: 1414205469}
     - target: {fileID: 1880208079435246911, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
       propertyPath: currentGear
       value: 
       objectReference: {fileID: 559636592}
+    - target: {fileID: 1880208079435246911, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
+      propertyPath: <CurrentGear>k__BackingField
+      value: 
+      objectReference: {fileID: 559636592}
     - target: {fileID: 4037586276684973624, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
       propertyPath: currentGear
+      value: 
+      objectReference: {fileID: 87664288}
+    - target: {fileID: 4037586276684973624, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
+      propertyPath: <CurrentGear>k__BackingField
       value: 
       objectReference: {fileID: 87664288}
     - target: {fileID: 4453832129706351152, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
@@ -1334,12 +1423,20 @@ PrefabInstance:
       propertyPath: currentGear
       value: 
       objectReference: {fileID: 1597557831}
+    - target: {fileID: 5513907188645588120, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
+      propertyPath: <CurrentGear>k__BackingField
+      value: 
+      objectReference: {fileID: 1597557831}
     - target: {fileID: 7096760894421039059, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
       propertyPath: m_Name
       value: Boat
       objectReference: {fileID: 0}
     - target: {fileID: 9061515777818543389, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
       propertyPath: currentGear
+      value: 
+      objectReference: {fileID: 848909012}
+    - target: {fileID: 9061515777818543389, guid: 1acd508bc584b7e498613fbd8893d129, type: 3}
+      propertyPath: <CurrentGear>k__BackingField
       value: 
       objectReference: {fileID: 848909012}
     m_RemovedComponents: []
@@ -1375,3 +1472,4 @@ SceneRoots:
   - {fileID: 489433223}
   - {fileID: 1707931286}
   - {fileID: 1196051571}
+  - {fileID: 1511333823}

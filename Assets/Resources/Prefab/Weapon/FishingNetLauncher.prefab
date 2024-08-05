@@ -162,9 +162,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd304b684469490c88a6617291ed3197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: 0}
   _gear: {fileID: 4073882787266032967}
   _projectileID: FishingNet
   _muzzle: {fileID: 7277487019536354354}
+  _fxID: Fishgig
 --- !u!114 &4073882787266032967
 MonoBehaviour:
   m_ObjectHideFlags: 0

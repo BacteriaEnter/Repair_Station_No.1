@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7336517337582016682}
-  - component: {fileID: 1661979008230659463}
   - component: {fileID: 6400385513193617486}
   - component: {fileID: 4088472844552541278}
-  m_Layer: 0
+  - component: {fileID: 5370094082144735521}
+  - component: {fileID: 1441931831553030911}
+  m_Layer: 6
   m_Name: SmallCannonBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,21 +36,6 @@ Transform:
   - {fileID: 8338876833837092353}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1661979008230659463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3272766357610403553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad85bc0f999b4e10841fb6f8df9b479d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 5
-  _lifeTimer: {fileID: 6400385513193617486}
-  _rb: {fileID: 4088472844552541278}
 --- !u!114 &6400385513193617486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,9 +52,9 @@ MonoBehaviour:
   onLifeTimeEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1661979008230659463}
-        m_TargetAssemblyTypeName: Projectile, Assembly-CSharp
-        m_MethodName: Death
+      - m_Target: {fileID: 5370094082144735521}
+        m_TargetAssemblyTypeName: SmallCannonBall, Assembly-CSharp
+        m_MethodName: Explode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -105,6 +91,73 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5370094082144735521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3272766357610403553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e15d520c6f4483bb0e3a5b1d328844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 5
+  _lifeTimer: {fileID: 6400385513193617486}
+  _rb: {fileID: 4088472844552541278}
+  _moveState: 0
+  _fxID: splat_small
+  _checkLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  _explodeRiadus: 6
+  damage: 5
+--- !u!61 &1441931831553030911
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3272766357610403553}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.000000014901161, y: -0.008677624}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.34050176, y: 0.3370306}
+  m_EdgeRadius: 0
 --- !u!1 &4042175591090641485
 GameObject:
   m_ObjectHideFlags: 0

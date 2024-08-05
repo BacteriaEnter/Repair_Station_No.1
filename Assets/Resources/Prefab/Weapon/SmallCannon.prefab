@@ -135,6 +135,7 @@ MonoBehaviour:
   _gear: {fileID: 2072929747206535905}
   _projectileID: SmallCannonBall
   _muzzle: {fileID: 1326797235705440676}
+  _fxID: Cannon
 --- !u!114 &2072929747206535905
 MonoBehaviour:
   m_ObjectHideFlags: 0

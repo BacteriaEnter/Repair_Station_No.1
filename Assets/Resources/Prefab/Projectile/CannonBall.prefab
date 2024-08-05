@@ -93,9 +93,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7086437708470889530}
-  - component: {fileID: 541217868260275188}
   - component: {fileID: 4425316576551910545}
   - component: {fileID: 8485765020285113292}
+  - component: {fileID: -1311956580345886829}
   m_Layer: 0
   m_Name: CannonBall
   m_TagString: Untagged
@@ -119,21 +119,6 @@ Transform:
   - {fileID: 7468344896920216991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &541217868260275188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9039648250277371088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad85bc0f999b4e10841fb6f8df9b479d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 5
-  _lifeTimer: {fileID: 4425316576551910545}
-  _rb: {fileID: 8485765020285113292}
 --- !u!114 &4425316576551910545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,9 +135,9 @@ MonoBehaviour:
   onLifeTimeEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 541217868260275188}
-        m_TargetAssemblyTypeName: Projectile, Assembly-CSharp
-        m_MethodName: Death
+      - m_Target: {fileID: -1311956580345886829}
+        m_TargetAssemblyTypeName: BigCannonBall, Assembly-CSharp
+        m_MethodName: Explode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -189,3 +174,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-1311956580345886829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9039648250277371088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42921cadcbcc416b981a2bb654d15af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 5
+  _lifeTimer: {fileID: 4425316576551910545}
+  _rb: {fileID: 8485765020285113292}
+  _moveState: 0
+  _fxID: splat_big
+  _checkLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  _explodeRiadus: 5
+  damage: 5

@@ -250,6 +250,9 @@ MonoBehaviour:
   <Sprite>k__BackingField: {fileID: 21300000, guid: 9800484221f58494ea4f53b5edacd9dd, type: 3}
   _gear: {fileID: 4685968945703526918}
   _spear: {fileID: 849647414252330578}
+  _stayTime: 0.8
+  _fadeTime: 0.2
+  _fxID: GrowlingWyvern
 --- !u!114 &4685968945703526918
 MonoBehaviour:
   m_ObjectHideFlags: 0
